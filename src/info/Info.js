@@ -1,140 +1,156 @@
-import self from "../img/self.png"
-import mock1 from "../img/mock1.png"
-import mock2 from "../img/mock2.png"
-import mock3 from "../img/mock3.png"
-import mock4 from "../img/mock4.png"
-import mock5 from "../img/mock5.png"
-
-/* Hi there! Thanks for checking out my portfolio template. Be sure to read the comments to get a better understanding of
-how to make this template work best for you! */
+import self from "../img/self.png";
+import VITConnect from "../img/portfolio.png";
+import mock2 from "../img/mock2.png";
+import mock3 from "../img/mock3.png";
+import mock4 from "../img/mock4.png";
+import mock5 from "../img/mock5.png";
 
 export let colors = ["rgb(0,255,164)", "rgb(166,104,255)"];
-/*
-I highly recommend using a gradient generator like https://gradientgenerator.paytonpierce.dev/ to generate a pair of colors that you like.
-These colors will be used to style your name on the homepage, the background of your picture, and some other accents throughout
-the site.
- */
-
-
-/*
-So let's get started! Some of the info below is pretty self-explanatory, like 'firstName' and 'bio'. I'll try to explain anything
-that might not be obvious right off the bat :) I recommend looking at the template example live using "npm start" to get an idea
-of what each of the values mean.
- */
 
 export const info = {
-    firstName: "John",
-    lastName: "Smith",
-    initials: "js", // the example uses first and last, but feel free to use three or more if you like.
-    position: "a Full Stack Developer",
-    selfPortrait: self, // don't change this unless you want to name your self-portrait in the "img" folder something else!
-    gradient: `-webkit-linear-gradient(135deg, ${colors})`, // don't change this either
-    baseColor: colors[0],
-    miniBio: [ // these are just some "tidbits" about yourself. You can look at mine https://paytonjewell.github.io/#/ for an example if you'd like
-        {
-            emoji: '☕',
-            text: 'fueled by coffee'
-        },
-        {
-            emoji: '🌎',
-            text: 'based in the US'
-        },
-        {
-            emoji: "💼",
-            text: "Systems Engineer at Google"
-        },
-        {
-            emoji: "📧",
-            text: "johnsmith@gmail.com"
-        }
-    ],
-    socials: [
-        {
-            link: "https://facebook.com",
-            icon: 'fa fa-facebook',
-            label: 'facebook'
-        },
-        {
-            link: "https://instagram.com",
-            icon: 'fa fa-instagram',
-            label: 'instagram'
-        },
-        {
-            link: "https://github.com",
-            icon: "fa fa-github",
-            label: 'github'
-        },
-        {
-            link: "https://linkedin.com",
-            icon: "fa fa-linkedin",
-            label: 'linkedin'
-        },
-        {
-            link: "https://twitter.com",
-            icon: "fa fa-twitter",
-            label: 'twitter'
-        }
-// Feel free to remove any of these that you don't have. I'll write an FAQ on how to add new ones later, let me know if you have a request for an icon!
-// Just change the links so that they lead to your social profiles.
+  firstName: "Arunima",
+  lastName: "Singh",
+  initials: "AS",
+  position: "a FrontEnd Web Developer",
+  selfPortrait: self,
+  gradient: `-webkit-linear-gradient(135deg, ${colors})`,
+  baseColor: colors[0],
+  miniBio: [
+    {
+      emoji: "☕",
+      text: "fueled by coffee",
+    },
+    {
+      emoji: "🌎",
+      text: "based in Uttar Pradesh, India",
+    },
+    {
+      emoji: "🎓",
+      text: "Student at VIT Bhopal University",
+    },
+    {
+      emoji: "📧",
+      text: "arunimaforwork@gmail.com",
+    },
+  ],
+  socials: [
+    {
+      link: "https://www.facebook.com/arunima.singh.98837/",
+      icon: "fa fa-facebook",
+      label: "facebook",
+    },
+    {
+      link: "https://instagram.com/lifeofarunima?igshid=YmMyMTA2M2Y=",
+      icon: "fa fa-instagram",
+      label: "instagram",
+    },
+    {
+      link: "https://github.com/arunima14",
+      icon: "fa fa-github",
+      label: "github",
+    },
+    {
+      link: "https://www.linkedin.com/in/-arunima-singh/",
+      icon: "fa fa-linkedin",
+      label: "linkedin",
+    },
+    {
+      link: "https://twitter.com/Arunima26728410",
+      icon: "fa fa-twitter",
+      label: "twitter",
+    },
+  ],
 
+  bio: "Hello! I'm Arunima. I'm a final year CSE ungraduate student at VIT Bhopal University.",
+  skills: {
+    proficientWith: [
+      "java",
+      "html/css",
+      "react",
+      "javascript",
+      "typescript",
+      "nodejs",
+      "bootstrap",
+      "version control",
+      "balasmiq",
     ],
-    bio: "Hello! I'm John. I'm a systems engineer for Google. I studied CompSci at Harvard, I enjoy long walks on the beach, and I believe artificial intelligence will inevitably rule us all one day. You should hire me!",
-    skills:
-        {
-            proficientWith: ['javascript', 'react', 'git', 'github', 'bootstrap', 'html5', 'css3', 'figma'],
-            exposedTo: ['nodejs', 'python', 'adobe illustrator']
-        }
-    ,
-    hobbies: [
-        {
-            label: 'reading',
-            emoji: '📖'
-        },
-        {
-            label: 'theater',
-            emoji: '🎭'
-        },
-        {
-            label: 'movies',
-            emoji: '🎥'
-        },
-        {
-            label: 'cooking',
-            emoji: '🌶'
-        }
-// Same as above, change the emojis to match / relate to your hobbies or interests.
-// You can also remove the emojis if you'd like, I just think they look cute :P
+    exposedTo: [
+      "cloud computation",
+      "EJS",
+      "python",
+      "cpp",
+      "machine learning",
     ],
-    portfolio: [ // This is where your portfolio projects will be detailed
-        {
-            title: "Project 1",
-            live: "https://paytonpierce.dev", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
-            source: "https://github.com/paytonjewell", // this should be a link to the **repository** of the project, where the code is hosted.
-            image: mock1
-        },
-        {
-            title: "Project 2",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
-            image: mock2
-        },
-        {
-            title: "Project 3",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
-            image: mock3
-        },
-        {
-            title: "Project 4",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
-            image: mock4
-        },
-        {
-            title: "Project 5",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
-            image: mock5
-        }
-    ]
-}
+  },
+  hobbies: [
+    {
+      label: "music",
+      emoji: "🎧",
+    },
+    {
+      label: "sports",
+      emoji: "🏸",
+    },
+    {
+      label: "movies",
+      emoji: "🎥",
+    },
+  ],
+
+  portfolio: [
+    {
+      title: "VIT Connect",
+      live: "A web application that will help the students to get the best emergency medical assistance by connecting parallelly the doctors & proctor for approval, prior to connecting to the ambulance service point specially designed for VIT Bhopal students",
+      source: "https://github.com/sankalp20/Emergency-VITConnect",
+      image: VITConnect,
+    },
+    {
+      title: "Book Recommender System",
+      live: "https://github.com/arunima14/book-recommender-system-python",
+      source: "https://github.com/arunima14/book-recommender-system-python",
+      image: mock2,
+    },
+    {
+      title: "Keeper Notes",
+      live: "https://github.com/arunima14/Keeper-Notes",
+      source: "https://github.com/arunima14/Keeper-Notes",
+      image: mock2,
+    },
+    {
+      title: "Update Time",
+      live: "https://arunima14.github.io/UpdateTime/public/index.html",
+      source: "https://github.com/arunima14/UpdateTime",
+      image: mock3,
+    },
+    {
+      title: "Drum Kit",
+      live: "https://arunima14.github.io/drum-kit/",
+      source: "https://github.com/arunima14/drum-kit",
+      image: mock4,
+    },
+    {
+      title: "FunEdu - shaping million tiny minds",
+      live: "https://the-black-hats.github.io/fun-edu/",
+      source: "https://github.com/arunima14/fun-edu",
+      image: mock5,
+    },
+    {
+      title: "Anchaal app",
+      live: "https://github.com/arunima14/Anchaal-app",
+      source: "https://github.com/arunima14/Anchaal-app",
+      image: mock5,
+    },
+    {
+      title: "Tindog",
+      live: "https://github.com/arunima14/tindog",
+      source: "https://github.com/arunima14/tindog",
+      image: mock5,
+    },
+    {
+      title: "Covid-19 resources",
+      live: "https://github.com/arunima14/covid-19-resources",
+      source: "https://github.com/arunima14/covid-19-resources",
+      image: mock5,
+    },
+  ],
+};
