@@ -100,7 +100,7 @@ export const info = {
   portfolio: [
     {
       title: "VIT Connect",
-      live: "A web application that will help the students to get the best emergency medical assistance by connecting parallelly the doctors & proctor for approval, prior to connecting to the ambulance service point specially designed for VIT Bhopal students",
+      live: "#",
       source: "https://github.com/sankalp20/Emergency-VITConnect",
       image: VITConnect,
     },
